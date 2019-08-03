@@ -1,0 +1,5 @@
+<form {{action "submitComment" on="submit"}}>
+  <label for="comment">Comment:</label>
+  <Textarea @id="comment" @value={{this.comment}} />
+  <input class="comment-input" type="submit" value="Submit" />
+</form>
