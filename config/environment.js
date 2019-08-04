@@ -3,6 +3,10 @@
 module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'ember-sandbox',
+    "ember-local-storage": {
+      namespace: true,
+      keyDelimeter: "/"
+    },
     environment,
     rootURL: '/',
     locationType: 'auto',
