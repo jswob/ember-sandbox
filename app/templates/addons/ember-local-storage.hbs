@@ -1,0 +1,27 @@
+<h1>Object and Arrays</h1> 
+
+<h2>Objects</h2>
+
+<EmberLocalStorageObject />
+
+<h2>Arrays:</h2>
+
+<LikeItem @userId="12342341" />
+<LikeItem @userId="12343214" />
+<LikeItem @userId="12345432" />
+<LikeItem @userId="12313432" />
+
+<h1>Adapters and Serializers</h1> 
+
+<CreatePost />
+<ul>
+  {{#each model as |post|}}
+    <li>
+      {{#link-to "addons.ember-local-storage.comment" post.id}}
+        Post: {{post.name}}
+      {{/link-to}}
+    </li>
+  {{/each}}
+</ul>
+<br>
+{{outlet}}

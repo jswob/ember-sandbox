@@ -1,0 +1,9 @@
+Create comment: 
+<CreateComment @post={{model}} />
+
+comments:
+<ul>
+  {{#each model.comments as |comment|}}
+    <li>Comment: {{comment.name}}</li>
+  {{/each}}
+</ul>

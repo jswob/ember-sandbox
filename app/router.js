@@ -7,6 +7,11 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('addons', function() {
+    this.route('ember-local-storage', function() {
+      this.route('comment', {path: "/:post_id"});
+    });
+  });
 });
 
 export default Router;
