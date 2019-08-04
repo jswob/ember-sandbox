@@ -1,0 +1,5 @@
+{{#unless isLiked}}
+  <button {{action "like" this.userId}}>Like it</button>
+{{else}}
+  You like it!
+{{/unless}}
