@@ -7,7 +7,10 @@ export function initialize(application) {
     }
   });
 
+  // Register logger factory
   application.register("logger:main", Logger);
+  // Inject logger factory only in "ac" route
+  application.inject("route:ac", "logger", "logger:main")
 }
 
 export default {

@@ -13,6 +13,7 @@ Router.map(function() {
     });
   });
   this.route('components');
+  this.route('ac');
 });
 
 export default Router;
