@@ -1,0 +1,15 @@
+<ul>
+  {{#each this.errors as |error|}}
+    <li>{{error.message}}</li>
+  {{/each}}
+</ul>
+<fieldset>
+  <label for="name">Name</label>
+  <Input @id="name" @name="user.name" @value={{this.name}} @change={{action "required"}} />
+
+  <label for="department">Department</label>
+  <Input @id="department" @name="user.department" @value={{this.department}} @change={{action "required"}} />
+
+  <label for="email">Email</label>
+  <Input @id="email" @name="user.email" @value={{this.email}} @change={{action "required"}} />
+</fieldset>
