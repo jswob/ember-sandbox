@@ -12,6 +12,7 @@ Router.map(function() {
       this.route('comment', {path: "/:post_id"});
     });
   });
+  this.route('components');
 });
 
 export default Router;
