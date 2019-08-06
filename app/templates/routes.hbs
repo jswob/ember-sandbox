@@ -1,0 +1,18 @@
+<h1>Routing</h1>
+<h2>Link-to component</h2>
+<LinkTo @route="application">
+  <h3>Logo</h3>
+</LinkTo>
+
+<nav>
+  <LinkTo @route="ac">AC</LinkTo>
+  <LinkTo @route="addons">Addons</LinkTo>
+  <br>
+  <h2>Nested route</h2>
+  <LinkTo @route="routes.new">Routes.New</LinkTo>
+  {{outlet}}
+  <h2>Dynamic Segments</h2>
+  <LinkTo @route="routes.dynamic" @model="12345678">Routes.Dynamic</LinkTo>
+  <h3>Enter not valid route name navigation bar to see globbing routes</h3>
+</nav>
+
