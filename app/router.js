@@ -12,6 +12,7 @@ Router.map(function() {
       this.route("comment", { path: "/:post_id" });
     });
   });
+  this.route('testing');
   this.route("components");
   this.route("ac");
   this.route("routes", function() {
