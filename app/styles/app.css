@@ -9,3 +9,12 @@
   display: block;
   text-align: center;
 }
+
+.blue {
+  background-color: blue;
+  font-size: 23px;
+}
+
+.blue a {
+  color: white !important;
+}
