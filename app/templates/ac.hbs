@@ -1,2 +1,14 @@
 <AcTryLogger />
 Cart:{{model.cart}}
+<h1>Application Concerns</h1>
+<h2>Services</h2>
+<Input type="text" @value={{this.name}} />
+<button {{action "add" name}}>Add</button>
+<ul>
+  {{#each this.acShoppingCart.items as |item|}}
+    <li>
+      {{item.name}}
+      <button {{action "remove" item}}>Remove</button>
+    </li>
+  {{/each}}
+</ul>
