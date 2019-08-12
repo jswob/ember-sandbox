@@ -11,6 +11,7 @@ Router.map(function() {
     this.route("ember-local-storage", function() {
       this.route("comment", { path: "/:post_id" });
     });
+    this.route('ember-simple-auth');
   });
   this.route('testing');
   this.route("components");
