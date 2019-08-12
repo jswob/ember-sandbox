@@ -1,0 +1,7 @@
+{{#if (has-block)}}
+  {{yield @post.title @post.body @post.author}}
+{{else}}
+  <h1>{{@post.title}}</h1>
+  <p>Authored by {{@post.author}}</p>
+  <p>{{@post.body}}</p>
+{{/if}}
