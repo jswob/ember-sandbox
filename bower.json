@@ -1,0 +1,6 @@
+{
+  "name": "ember-sandbox",
+  "dependencies": {
+    "es5-shim": "^4.5.8"
+  }
+}
